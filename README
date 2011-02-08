@@ -1,0 +1,15 @@
+== Intro ==
+This is a hack for phpRaider's phpBB3 auth plugin. It validates that the user
+is in a specific group when handling authentication.
+
+== Setup ==
+1. Drop the file in PHPRAIDER_ROOT/authentication/phpbb3. 
+
+2. Change the hardcoded group ID (look for the $AUTH_GROUP_ID variable) to whatever
+   it ought be.
+
+3. Shit works. If you remove the user from the phpBB group, their access to phpRaider
+   is disabled.
+
+== TODO ==
+* Make the group ID a config option instead of a hardcoded value. (like I fucking care)
